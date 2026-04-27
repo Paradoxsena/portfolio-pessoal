@@ -91,11 +91,11 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-400 mb-3 animate-fade-up-delay-1">
-          React · Node.js · PostgreSQL
+          React · Node.js · PostgreSQL · Python
         </p>
 
         <p className="text-base sm:text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-up-delay-2">
-          Construo aplicações web completas, do front-end ao back-end. Foco em resolver problemas reais com código limpo, arquitetura escalável e entrega de valor.
+          Desenvolvo aplicações web completas com foco em performance, escalabilidade e resolução de problemas reais.
         </p>
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-8 animate-fade-up-delay-2">

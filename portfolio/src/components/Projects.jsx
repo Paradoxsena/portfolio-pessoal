@@ -26,7 +26,7 @@ const Projects = () => {
       bgColor: 'bg-blue-500/10',
       borderColor: 'border-blue-500/15',
       technologies: ['Python', 'React', 'APIs de IA', 'Manipulação de Arquivos'],
-      github: 'https://github.com/Paradoxsena',
+      github: 'https://github.com/Paradoxsena/text-summarizer-ai',
       demo: null,
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
       bgColor: 'bg-purple-500/10',
       borderColor: 'border-purple-500/15',
       technologies: ['React', 'Node.js', 'Express', 'WebSocket'],
-      github: 'https://github.com/Paradoxsena',
+      github: 'https://github.com/Paradoxsena/realtime-notification-system',
       demo: null,
     },
     {
@@ -99,7 +99,7 @@ const Projects = () => {
                           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white text-sm border border-white/10 transition-all"
                         >
                           <GitHubIcon size={16} />
-                          Código
+                          Ver Projeto
                         </a>
                         {project.demo && (
                           <a
