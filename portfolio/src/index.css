@@ -9,6 +9,8 @@
   --color-accent-primary: #3b82f6;
   --color-accent-secondary: #8b5cf6;
   --color-accent-glow: #60a5fa;
+  --color-amber-400: #f59e0b;
+  --color-amber-500: #f97316;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
@@ -22,6 +24,8 @@
     background-color: #0a0a0a;
     color: #e5e5e5;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
@@ -30,7 +34,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
@@ -39,7 +43,7 @@
 
   ::-webkit-scrollbar-thumb {
     background: #2a2a2a;
-    border-radius: 4px;
+    border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -61,12 +65,27 @@
     background-clip: text;
   }
 
+  .gradient-amber {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .glow-border {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
   }
 
   .section-padding {
     @apply px-4 sm:px-6 lg:px-8 xl:px-16;
+  }
+
+  .section-label {
+    @apply text-accent-primary text-sm font-medium uppercase tracking-wider;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-white;
   }
 }
 
@@ -76,14 +95,9 @@
   }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
+@keyframes fadeInUp {
   from { 
-    transform: translateY(20px); 
+    transform: translateY(24px); 
     opacity: 0; 
   }
   to { 
@@ -92,11 +106,22 @@
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+.animate-fade-up {
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.animate-slide-up {
-  animation: slideUp 0.5s ease-out;
+.animate-fade-up-delay-1 {
+  animation: fadeInUp 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeInUp 0.6s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fadeInUp 0.6s ease-out 0.3s forwards;
+  opacity: 0;
 }
 
